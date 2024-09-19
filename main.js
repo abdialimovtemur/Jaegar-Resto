@@ -22,7 +22,12 @@ const cardsRender = (cardsData) => {
     cards.innerHTML = cardsData
         .map(
             (item) => `
-        
+         <div class="flex flex-col bg-[#1F1D2B] rounded-lg items-center text-white gap-3 px-3 py-4">
+                    <img src="${item.img}" alt="img">
+                    <p class="">${item.title}adfa dfas dfasdfsa</p>
+                    <p>${item.price}</p>
+                    <p class="text-[#ABBBC2]">${item.text}</p>
+                </div>
 
     `
         )
